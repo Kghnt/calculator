@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS  // 解决某些编译器可能报告的错误
 #include <stdio.h>
 #include "calculator.h" // 包含头文件
+#include "Tri_func.h"
 
 void Instructions();
 int global_flag;//用于判断error输入
@@ -30,4 +31,15 @@ int main()
     }
     printf("谢谢使用！\n");
     return 0;
+}
+
+void Instructions()
+{
+    printf("*********************************************************************************\n");
+    printf("*                               三角函数计算器                                  *\n");
+    printf("*********************************************************************************\n");
+    printf("使用说明：\n");
+    printf("\t本计算器支持基本的计算器功能，此外支持三角函数的使用\n");
+    printf("\t支持三角函数类型：sin,cos,tan,arcsin,arccos,arctan\n");
+    printf("\t如想使用三角函数，sin(xx), cos(xx), tan(xx), asin(xx), acos(xx), atan(xx)\n\n");
 }
