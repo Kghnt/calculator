@@ -98,14 +98,14 @@ double factor()
             getchar();    //因为反三角函数判断四个字母所以得吸收一个字母，cos和tan同理
             radian = DEG_TO_RAD(number);
             return cqu_sin(radian);
-           // return sin(radin)；
+          //  return sin(radian);
         }
         else if (func[0] == 'c' && func[1] == 'o' && func[2] == 's') 
         {
             getchar();
             radian = DEG_TO_RAD(number);
             return cqu_cos(radian);
-            // return cos(radin)；
+            // return cos(radian);
         }
         else if (func[0] == 't' && func[1] == 'a' && func[2] == 'n') 
         {
