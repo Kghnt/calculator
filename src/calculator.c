@@ -117,8 +117,9 @@ double factor()
                 global_flag = 1;
                 return 0;
             }
+            radian = DEG_TO_RAD(number);
             return cqu_tan(radian);
-            // return tan(radin)£»
+           // return tan(radian);
         }
         else if (func[0] == 'a' && func[1] == 's' && func[2] == 'i' && func[3] == 'n') {
             if (number >= -1 && number <= 1)
