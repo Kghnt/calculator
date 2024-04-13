@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "factorial.h"
-#define RANK 1000
+#define RANK 50
 //Ω” ’ª°∂»
 
 
