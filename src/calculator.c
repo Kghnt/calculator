@@ -152,6 +152,7 @@ double factor()
         }
         else if (func[0] == 'a' && func[1] == 't' && func[2] == 'a' && func[3] == 'n') 
         {
+            angle = number;
             return cqu_arctan(angle);
             //return atan(angle);
 
