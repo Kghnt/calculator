@@ -3,7 +3,7 @@
 #include "calculator.h" // 包含头文件
 #include "Tri_func.h"
 #include "test.h"
-void Instructions();
+void instructions();
 int global_flag;//用于判断error输入
 
 int main() 
@@ -20,12 +20,12 @@ int main()
     else if (mode_choice == 'B' || mode_choice == 'b') 
     {
         char choice = 'y';
-        Instructions();
+        instructions();
         while (choice == 'y' || choice == 'Y')
         {
             global_flag = 0;
             printf("请输入表达式（支持四则运算，可包含括号）：\n");
-            double result = expression();
+            double result = expression();  //该函数为计算体函数，整个计算过程(包括数据流的读入)都在此函数以及其递归调用的函数中实现
             if (global_flag == 0)
             {
                 printf("结果为： %.8g\n\n", result);//输出8位有效数字
@@ -54,7 +54,7 @@ int main()
     
 }
 
-void Instructions()
+void instructions()
 {
     printf("*********************************************************************************\n");
     printf("*                               三角函数计算器                                  *\n");
